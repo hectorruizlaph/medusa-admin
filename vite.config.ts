@@ -27,11 +27,7 @@ export default defineConfig({
   },
   define: {
     __MEDUSA_BACKEND_URL__: JSON.stringify(
-      env.MEDUSA_BACKEND_URL ||
-      // Backwards-compat with Gatsby.
-      env.GATSBY_MEDUSA_BACKEND_URL ||
-      env.GATSBY_STORE_URL ||
-      ""
+      env.MEDUSA_BACKEND_URL || "https://medusa-production-18c5.up.railway.app:9000"
     ),
   },
   optimizeDeps: {
