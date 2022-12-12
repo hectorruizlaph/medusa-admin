@@ -1,3 +1,4 @@
-const medusaUrl = __MEDUSA_BACKEND_URL__ || "http://localhost:9000"
+const medusaUrl =
+  "https://brilliant-fairy-69d52d.netlify.app:9000" || "http://localhost:9000"
 
 export { medusaUrl }
